@@ -1,9 +1,7 @@
 import React from 'react'
 
-const VideoPreview = () => {
-  return (
-    <div>VideoPreview</div>
-  )
-}
+const VideoPreview = ({ children }) => {
+  return <>{children}</>;
+};
 
-export default VideoPreview
+export default VideoPreview;
