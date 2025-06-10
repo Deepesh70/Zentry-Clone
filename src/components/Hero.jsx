@@ -5,7 +5,7 @@ import { TiLocationArrow } from 'react-icons/ti';
 import { useState, useRef, useEffect } from 'react';
 // import VideoPreview from './VideoPreview';
 import Button from './Button';
-import { BrowserRouter, useNavigate } from 'react-router-dom';
+import './Hero.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,7 +17,6 @@ const Hero = () => {
   const [ loadedVideos, setLoadedVideos ] = useState(0);
   const totalVideos = 4;
   const nextVdRef = useRef(null);
-  const navigate = useNavigate();
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
@@ -82,18 +81,10 @@ const Hero = () => {
 
   const getVideoSrc = (index) => `/videos/hero-${index}.mp4`;
 
-  useEffect(() => {
-    if (loading) {
-      // Redirect to home page after a short delay (optional)
-      const timer = setTimeout(() => {
-        navigate('/');
-      }, 1000); // 1 second delay, adjust as needed
-      return () => clearTimeout(timer);
-    }
-  }, [loading, navigate]);
+  
 
   return (
-     <div className="relative h-dvh w-screen overflow-x-hidden">
+     <div className="relative min-h-dvh w-screen overflow-x-hidden overflow-y-auto">
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
           {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
@@ -148,12 +139,14 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-100">
           G<b>A</b>MING
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
+
+            
             <h1 className="special-font hero-heading text-blue-100">
               redefi<b>n</b>e
             </h1>
@@ -179,13 +172,6 @@ const Hero = () => {
   );
 };
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Hero />
-      {/* other components */}
-    </BrowserRouter>
-  );
-}
 
-export default App;
+
+export default Hero;

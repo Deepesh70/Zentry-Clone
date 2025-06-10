@@ -9,6 +9,12 @@ body {
   overflow-x: hidden;
   background-color: #dfdff0;
   font-family: "General Sans", sans-serif;
+  
+/* Responsive text sizing */
+.hero-heading {
+  font-size: clamp(2rem, 5vw, 7rem);
+  line-height: 1.1;
+}
 }
 
 @layer base {
