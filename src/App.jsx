@@ -5,7 +5,7 @@ import About from './components/About'
 import Navbar from './components/Navbar'
 const App = () => {
   return (
-      <main className="min-h-screen bg-gray-100 overflow-x-hidden bg-zinc-600">
+      <main className="min-h-screen overflow-x-hidden bg-blue-50">
         <Navbar />
         <Hero />
         <About />
