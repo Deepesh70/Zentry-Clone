@@ -82,6 +82,8 @@ const Feature = () => {
                     description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
             />
         </BentoTilt>
+
+        
         <BentoTilt className='bento-tilt_1 me-14 md:col-span-1 md:me-0'>
             <BentoCard
              src="videos/feature-4.mp4"
@@ -89,6 +91,7 @@ const Feature = () => {
              description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
             />
         </BentoTilt>
+        
 
         <BentoTilt className='bento-tilt_2'>
             <div className='flex size-full flex-col justify-between bg-violet-300 p-5'>
