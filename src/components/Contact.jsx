@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
           <div className='flex flex-col items-center text-center uppercase'>
             <p className='font-general text-[10px] uppercase'>Join Zentry</p>
-            <p className='special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem] '><b>Lets's build the <br /> new era of <br/> gaming together</b></p>
+            <p className=' mt-10 w-full font-robert-medium text-5xl leading-[1] md:text-[6rem] '><b>Lets's build the <br /> new era of <br/> gaming together</b></p>
 
             <Button title="contact us" containerClass="mt-10 cursor-pointer"/>
             </div>  
