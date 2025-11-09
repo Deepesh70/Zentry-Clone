@@ -1,6 +1,6 @@
 # Zentry Gaming Web
 
-Welcome to the Zentry Gaming Web project! This is a modern, visually engaging landing page for the Zentry gaming universe, built with React, Vite, and Tailwind CSS.
+Welcome to the Zentry Gaming Web project!  This is a modern, visually engaging landing page for the Zentry gaming universe, built with React, Vite, and Tailwind CSS.(This is just a Landing Page)
 
 ## Features
 
